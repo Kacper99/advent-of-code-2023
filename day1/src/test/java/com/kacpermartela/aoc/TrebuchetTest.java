@@ -1,12 +1,10 @@
-import org.junit.jupiter.api.Test;
+package com.kacpermartela.aoc;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 class TrebuchetTest {
 
@@ -33,10 +31,8 @@ class TrebuchetTest {
                 "xtwone3four",
                 "4nineeightseven2",
                 "zoneight234",
-                "7pqrstsixteen"
-        );
+                "7pqrstsixteen");
         final var trebuchet = new Trebuchet();
         System.out.println(trebuchet.calibrate2(lines));
     }
-
 }

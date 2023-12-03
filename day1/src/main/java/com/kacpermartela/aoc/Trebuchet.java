@@ -1,3 +1,5 @@
+package com.kacpermartela.aoc;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -25,8 +27,7 @@ public class Trebuchet {
             "six", "six6six",
             "seven", "seven7seven",
             "eight", "eight8eight",
-            "nine", "nine9nine"
-    );
+            "nine", "nine9nine");
 
     int calibrate2(List<String> lines) {
         List<Integer> nums = new ArrayList<>();
@@ -42,5 +43,4 @@ public class Trebuchet {
         }
         return nums.stream().reduce(0, Integer::sum);
     }
-
 }
