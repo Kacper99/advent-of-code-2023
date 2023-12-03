@@ -1,0 +1,54 @@
+[versions]
+spotless = "6.22.0"
+kotlin = "1.9.20"
+
+assertj = "3.24.2"
+kotest = "5.7.2"
+kotest-arrow = "1.4.0"
+mockserver = "5.15.0"
+
+spring-dependency-management-plugin = "1.1.3"
+springboot = "3.1.5"
+springdoc = "2.2.0"
+
+flyway = "9.22.3"
+jooq = "8.2.1"
+postgres = "42.6.0"
+testcontainers = "1.19.1"
+arrow = "1.2.0"
+
+jspeedtest = "1.31.3"
+jackson = "2.16.0"
+
+[libraries]
+spotless = { module = "com.diffplug.spotless:spotless-plugin-gradle", version.ref = "spotless" }
+kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-spring-plugin = { module = "org.jetbrains.kotlin:kotlin-allopen", version.ref = "kotlin" }
+
+assertj-core = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+kotest = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
+kotest-arrow = { module = "io.kotest.extensions:kotest-assertions-arrow", version.ref = "kotest-arrow" }
+mockserver = { module = "org.mock-server:mockserver-client-java", version.ref = "mockserver" }
+
+spring-dependency-management-plugin = { module = "io.spring.gradle:dependency-management-plugin", version.ref = "spring-dependency-management-plugin" }
+spring-boot-gradle-plugin = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springboot" }
+springdoc = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "springdoc" }
+
+flyway-core = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
+flyway-plugin = { module = "gradle.plugin.org.flywaydb:gradle-plugin-publishing", version.ref = "flyway" }
+testcontainers-postgres = { module = "org.testcontainers:postgresql", version.ref = "testcontainers" }
+postgres = { module = "org.postgresql:postgresql", version.ref = "postgres" }
+jooq-plugin = { module = "nu.studer:gradle-jooq-plugin", version.ref = "jooq" }
+arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
+arrow-fx-coroutines = { module = "io.arrow-kt:arrow-fx-coroutines", version.ref = "arrow" }
+
+jspeedtest = { module = "fr.bmartel:jspeedtest", version.ref = "jspeedtest" }
+jackson-dataformat-xml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-xml", version.ref = "jackson" }
+jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson" }
+
+[bundles]
+arrow = ["arrow-core", "arrow-fx-coroutines"]
+
+[plugins]
+
