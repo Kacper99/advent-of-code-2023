@@ -28,7 +28,6 @@ class CubeConundrumTest {
         assertThat(cubeConundrum.solve2(lines)).isEqualTo(56322);
     }
 
-
     @Test
     void smallTestPart1() {
         final var lines =
@@ -60,7 +59,6 @@ class CubeConundrumTest {
         final var cubeConundrum = new CubeConundrum();
         assertThat(cubeConundrum.solve2(lines)).isEqualTo(2286);
     }
-
 
     @ParameterizedTest
     @MethodSource("provideTestCases")

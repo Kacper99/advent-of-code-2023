@@ -22,7 +22,7 @@ public class CubeConundrum {
             String[] hands = gameAndHands[1].split(";");
             for (final var cubes : hands) {
                 String[] hand = cubes.strip().split(",");
-                for (String cube: hand) {
+                for (String cube : hand) {
                     String[] countAndColour = cube.strip().split(" ");
                     int count = Integer.parseInt(countAndColour[0]);
                     String colour = countAndColour[1].replace(",", "").strip();
@@ -49,7 +49,7 @@ public class CubeConundrum {
             String[] hands = gameAndHands[1].split(";");
             for (final var cubes : hands) {
                 String[] hand = cubes.strip().split(",");
-                for (String cube: hand) {
+                for (String cube : hand) {
                     String[] countAndColour = cube.strip().split(" ");
                     int count = Integer.parseInt(countAndColour[0]);
                     String colour = countAndColour[1].replace(",", "").strip();
@@ -64,7 +64,6 @@ public class CubeConundrum {
         }
         return powers.stream().reduce(0, Integer::sum);
     }
-
 
     int extractGameId(String game) {
         return Integer.parseInt(game.replace(":", "").strip().split(" ")[1]);
