@@ -33,7 +33,7 @@ public class GearRatios {
                     currNumber = "";
                 }
             }
-            if (!currNumber.equals("")) {
+            if (!currNumber.equals("")) { //End of line
                 boolean isAdjacent = false;
                 for (int k = Math.max(0, i - 1); k <= Math.min(schematic.length - 1, i + 1); k++) {
                     for (int l = Math.max(0, line.length - currNumber.length() - 1); l < line.length; l++) {
